@@ -30,8 +30,8 @@ export default async function handler(req, res) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'C&C Travel Hub <noreply@cctravelhub.com>', // Replace with your verified domain
-      to: ['info@cctravelhub.com'], // Replace with your actual email
+      from: 'C&C Travel Hub <noreply@cctravelhub.xyz>', // Replace with your verified domain
+      to: ['info@cctravelhub.xyz'], // Replace with your actual email
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

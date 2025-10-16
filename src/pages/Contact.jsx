@@ -59,7 +59,7 @@ const Contact = () => {
     {
       icon: 'email',
       title: 'Email Address',
-      details: ['info@cctravelhub.com'],
+      details: ['info@cctravelhub.xyz'],
       action: 'Send us an email'
     },
     {
