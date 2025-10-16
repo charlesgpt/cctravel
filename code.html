@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>C &amp; C Travel Hub</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2ad0d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#101010",
+            "surface-light": "#ffffff",
+            "surface-dark": "#1a1a1a",
+            "muted-light": "#6b7280",
+            "muted-dark": "#9ca3af",
+            "text-light": "#1f2937",
+            "text-dark": "#f3f4f6"
+          },
+          fontFamily: {
+            "display": ["Noto Serif", "serif"],
+            "body": ["Poppins", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+             'gold-glow': '0 0 15px 5px rgba(242, 173, 13, 0.4)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .font-display { font-family: 'Noto Serif', serif; }
+    .font-body { font-family: 'Poppins', sans-serif; }
+    .glowing-compass {
+      animation: spin 8s linear infinite, glow 3s ease-in-out infinite alternate;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+     @keyframes glow {
+      from { box-shadow: 0 0 5px 0px #f2ad0d; }
+      to { box-shadow: 0 0 20px 10px #f2ad0d; }
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark">
+<div class="relative min-h-screen w-full overflow-x-hidden">
+<header class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap px-6 sm:px-10 py-4 bg-background-dark/30 backdrop-blur-sm">
+<div class="flex items-center gap-3">
+<div class="text-primary glowing-compass rounded-full p-1">
+<span class="material-symbols-outlined text-3xl">explore</span>
+</div>
+<h2 class="text-white text-xl font-display font-bold">C &amp; C Travel Hub</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-white text-sm font-medium hover:text-primary transition-colors" href="code.html">Home</a>
+<a class="text-white text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-white text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-white text-sm font-medium hover:text-primary transition-colors" href="#destinations">Destinations</a>
+<a class="text-white text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined">language</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjkgBpG8vV2RP0bLfShjqBNl0ZGDzO1TJRTBa6_bwobyarBMxxoQOJPSkXjkTDdyTFkLAiAW07ZEB9ooP8uW9YkyqIgO-BJbNCOP3Uu_bBt1Nmc-quBAT1o-R6IoZuG5tlHzD_tHnRR5TsOx07ZPcP7eIgAQl5N_KZm6jgD_G0MEBwYmEVo4G-BtuwrZsTNXnZjgtBv_Ui0AiWXu3EbnV015quj0WwtaTvZwVEHwNKriRW3hiyDIHPgaBn7wKua5_kTvkuHCNmt4c");'></div>
+<button class="lg:hidden text-white">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col">
+<section class="relative h-screen flex items-center justify-center text-center text-white p-4">
+<div class="absolute inset-0 bg-black opacity-50"></div>
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeOxu7lbZVboLnLL51quRmYK0B7bSQBjhFV08A4-ecgTiJCOS4-XD_oT_ow7OFfI2cbxQJ6V2gYfG-Q2blUUUaEd2uFXx6HQm14JFC_WuRem67T_zRwDhx4-wZhlnj0gEx0KfBotirCwS_f3diAAIS93VaDqzud240YvL5XK6WQ1UaQUztPu5PcwBrIOSgYIOTBQvLcdGcfpEUcevSeIYW6-Mlvlpy4Mxfm8hMBXut9u2vCkTAaqI-OTN5tJYk_0v7_I2NqvMQz9k");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="relative z-10 flex flex-col items-center gap-6 max-w-4xl animate-fade-in-up">
+<h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight">Your Passport to the World's Finest Journeys</h1>
+<p class="text-lg md:text-xl max-w-2xl text-white/90">Embark on unforgettable adventures with C &amp; C Travel Hub. We curate luxury travel experiences tailored to your desires, ensuring every journey is seamless and extraordinary.</p>
+<button class="bg-primary text-background-dark font-bold text-lg py-3 px-8 rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 shadow-gold-glow">
+              Explore Destinations
+            </button>
+</div>
+</section>
+<div class="bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<section class="grid md:grid-cols-2 gap-12 items-center" id="about">
+<div>
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-4">About Us</h2>
+<p class="mb-6 text-muted-light dark:text-muted-dark">At C &amp; C Travel Hub, we believe that travel is more than just visiting new places; it's about creating lasting memories and enriching your life. With years of experience in the luxury travel industry, our team of experts is dedicated to crafting bespoke itineraries that cater to your unique preferences and interests. From exotic getaways to cultural immersions, we handle every detail with precision and care, ensuring a seamless and unforgettable experience.</p>
+<button class="bg-primary/20 text-primary font-bold py-3 px-6 rounded-lg hover:bg-primary/30 transition-colors">Learn More</button>
+</div>
+<div class="grid grid-cols-2 grid-rows-2 gap-4 h-96">
+<div class="col-span-1 row-span-2 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhUkM9VpJ_rzy3QmdbP9Qr8_NaAqnk1jYi6McW0Jd0oBTfCXcmuVHJwDEqlPFiyalo3ZVdAmXulrQNs-0jDWgMU55fNyk4wqn_0BrEP_N0FLYkTTRrsdHauiddel7L3ubDeFYvQJW9AYcAnZgF4E7Ic-DJ5g7CjuBuMWlc3IODdoy9oXo33UDOIjtLV_if1pdyzJRXMA7mSnu7WSn5bBsH1_pUaXkaPu8KUNonuA6JJmnjGm4wf-q-M1LEAdfw0Pw0ZN5RKLaRD5Q");'></div>
+<div class="col-span-1 row-span-1 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzTdG3mSiQeffE3Zuks0A98fQjthwLUYZ-JtaaFSLHzNIKOEtTR7y48Z13z9CUes1IGREiIPsZ0-lk7VZCYEWHht1B1hmxArkl6v0rfgP7Y2-W3lQwVhFyl5UI1-rOJYQM5wDrmAxjrAmabvLy-YJjon0Bir3UwqUs3Fu0M9z9KoSFgV24nc3RCYldmGwz42kbwRSbE026qTErskqrWgDCn4sUT85Y5ilF4hlz-XyMhoD0Z5DSBj0rFnrsSRVfm6RgiRguUOWvOGk");'></div>
+<div class="col-span-1 row-span-1 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBtn3BLz9aAe9pmsVN-7FT2IK3kw34bjhcQtM9923OiIatg0JlqdcJOFrhVC5eRKdYvMvXS1-F01iq7LCpYZY73Zq4pVsyad2uIgO9xMyCLQO6ZwtIRCIjdWYAcNP31lBAOAIEcZGlJs5ldd76DX3KlC1dpSgtfZILxllwqKQSldVNoC61QasUFurevGD_8ekxHJFJVVY_o9z4vG5p43ruPM5CplsWXIZFgsBvHGoi3nkTmqfWh1ur6s5IqHeQbrsRWTjWqgX1Iio");'></div>
+</div>
+</section>
+<section class="py-16 sm:py-24" id="services">
+<h2 class="font-display text-4xl font-bold text-center text-text-light dark:text-text-dark mb-12">Our Services</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl text-center flex flex-col items-center border border-transparent hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-primary/10 text-primary p-4 rounded-full mb-4"><span class="material-symbols-outlined text-4xl">flight_takeoff</span></div>
+<h3 class="font-display text-xl font-bold mb-2">Luxury Travel Planning</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Personalized itineraries for unforgettable journeys.</p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl text-center flex flex-col items-center border border-transparent hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-primary/10 text-primary p-4 rounded-full mb-4"><span class="material-symbols-outlined text-4xl">badge</span></div>
+<h3 class="font-display text-xl font-bold mb-2">Visa Assistance</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Expert guidance for smooth and efficient visa processing.</p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl text-center flex flex-col items-center border border-transparent hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-primary/10 text-primary p-4 rounded-full mb-4"><span class="material-symbols-outlined text-4xl">beach_access</span></div>
+<h3 class="font-display text-xl font-bold mb-2">Curated Vacation Packages</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Handpicked destinations and experiences.</p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl text-center flex flex-col items-center border border-transparent hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-primary/10 text-primary p-4 rounded-full mb-4"><span class="material-symbols-outlined text-4xl">concierge</span></div>
+<h3 class="font-display text-xl font-bold mb-2">24/7 Concierge Service</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Dedicated support throughout your trip.</p>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24" id="destinations">
+<h2 class="font-display text-4xl font-bold text-center text-text-light dark:text-text-dark mb-12">Featured Destinations</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="group overflow-hidden rounded-xl relative">
+<div class="h-96 bg-cover bg-center rounded-xl group-hover:scale-110 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5e4z_Di1I9LQdOYNATQOhbqimNeSBRAlJ_6p24MxhaH8J0SCPQ8R0nFHjjfxMK4OTa7TtRXA9Rv5s-04VUqwNBzAJFj7KWsperU4IboIQarYr7rhrKLXyYhpc-Xofn0F6a0K2_Iri1doWCTgy1fMkJ7OA_TgsHFXznf_ObASpkn8bLJOu9nhI5IYoNJD0ZP3yvR5S30rVzdfLvu2uDiU5L2-TA35J6hH2WATAsKOBfU7X59ljF-CJ5c8noFBN55awoL_ZWrGVnRI");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 text-white">
+<h3 class="font-display text-2xl font-bold">Maldives</h3>
+<p class="text-sm text-white/80 mt-1">Pristine beaches and overwater bungalows.</p>
+</div>
+</div>
+<div class="group overflow-hidden rounded-xl relative">
+<div class="h-96 bg-cover bg-center rounded-xl group-hover:scale-110 transition-transform duration-500" style='background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 text-white">
+<h3 class="font-display text-2xl font-bold">Dubai</h3>
+<p class="text-sm text-white/80 mt-1">Luxury shopping, modern architecture, and desert adventures.</p>
+</div>
+</div>
+<div class="group overflow-hidden rounded-xl relative">
+<div class="h-96 bg-cover bg-center rounded-xl group-hover:scale-110 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBtn3BLz9aAe9pmsVN-7FT2IK3kw34bjhcQtM9923OiIatg0JlqdcJOFrhVC5eRKdYvMvXS1-F01iq7LCpYZY73Zq4pVsyad2uIgO9xMyCLQO6ZwtIRCIjdWYAcNP31lBAOAIEcZGlJs5ldd76DX3KlC1dpSgtfZILxllwqKQSldVNoC61QasUFurevGD_8ekxHJFJVVY_o9z4vG5p43ruPM5CplsWXIZFgsBvHGoi3nkTmqfWh1ur6s5IqHeQbrsRWTjWqgX1Iio");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 text-white">
+<h3 class="font-display text-2xl font-bold">Rome</h3>
+<p class="text-sm text-white/80 mt-1">Explore the rich history of the Eternal City.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24" id="why-choose-us">
+<h2 class="font-display text-4xl font-bold text-center text-text-light dark:text-text-dark mb-12">Why Choose Us</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center p-4">
+<div class="text-primary mb-3"><span class="material-symbols-outlined text-5xl">military_tech</span></div>
+<h3 class="font-display text-xl font-bold mb-2">Unparalleled Expertise</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Our experienced team ensures every detail is perfect.</p>
+</div>
+<div class="text-center p-4">
+<div class="text-primary mb-3"><span class="material-symbols-outlined text-5xl">groups</span></div>
+<h3 class="font-display text-xl font-bold mb-2">Personalized Service</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">We tailor each journey to your unique preferences.</p>
+</div>
+<div class="text-center p-4">
+<div class="text-primary mb-3"><span class="material-symbols-outlined text-5xl">verified_user</span></div>
+<h3 class="font-display text-xl font-bold mb-2">Reliable Support</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">24/7 assistance for a worry-free experience.</p>
+</div>
+<div class="text-center p-4">
+<div class="text-primary mb-3"><span class="material-symbols-outlined text-5xl">schedule</span></div>
+<h3 class="font-display text-xl font-bold mb-2">Time-Saving Solutions</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">We handle logistics, so you can relax and enjoy.</p>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24" id="testimonials">
+<h2 class="font-display text-4xl font-bold text-center text-text-light dark:text-text-dark mb-12">What Our Clients Say</h2>
+<div class="grid lg:grid-cols-2 gap-8">
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl border border-primary/20">
+<div class="flex items-center mb-4">
+<div class="size-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA3mcUJJ-zxtMrcLVAFmF8WBYUkxgZbi-O_wIf7xcRCDgFRXlPfn2uBhhD5hvFTHrBXYAd72c4I3iwJZ1MTHqmcQnetkq6ga2_TmMbv5GlOREeVfovDysEbHiAwx12ESugDwfgZHb2OwzDvtuKNDaGA7SL_kyqJ6rg9le1kmxM65f9CsWw138AuwRU-sKJgMdw4WN3dtikWSkqTajEfuRY54E3oell-1uRS1xSbeXjBuqBKgU_O96-mcEnI7JCdqzJXNgVX8G2HJS8");'></div>
+<div class="ml-4">
+<p class="font-bold text-text-light dark:text-text-dark">Sophia Bennett</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">June 15, 2023</p>
+</div>
+</div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-muted-light dark:text-muted-dark mb-4">"C &amp; C Travel Hub exceeded all my expectations! Their attention to detail and personalized service made my trip to the Maldives truly unforgettable."</p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl border border-primary/20">
+<div class="flex items-center mb-4">
+<div class="size-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCP5Y1IkSTul5kU_n1G7I4ZaXk696DT7yHtLT4UT-t_kea25hNQxHCQ0QOV0WZsXRCouwShyCFf8233o1T-Q81T-QI3b2ds60hQ5sPde6W0o8NJdXhcRUhXnFtfEk4ZvJWGUBVSjji7bLncy3VAFqY4zRyfoJYyGmb7kGpdFypteWyRJ8R3KABQCr41ggtHBwaNJtp5CUV4z_aI5KvItfZuiLVkX3Ci9xr5pPXpjz9jeeActu5Ke9GgG2gF53nld1f-AwKzu-Fp7J4");'></div>
+<div class="ml-4">
+<p class="font-bold text-text-light dark:text-text-dark">Ethan Carter</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">July 22, 2023</p>
+</div>
+</div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-muted-light dark:text-muted-dark mb-4">"From start to finish, C &amp; C Travel Hub provided exceptional service. Their expertise in visa assistance made our family vacation to Europe seamless and enjoyable."</p>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24 grid md:grid-cols-2 gap-12 items-start" id="contact">
+<div>
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-4">Contact Us</h2>
+<p class="text-muted-light dark:text-muted-dark mb-6">Have a question or ready to plan your next adventure? Fill out the form or find us on the map.</p>
+<div class="mb-8 space-y-4">
+<div class="flex items-center gap-3">
+<div class="text-primary"><span class="material-symbols-outlined">phone</span></div>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Phone Numbers</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">UAE: +971 58 524 2945</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Tanzania: +255 763 858 246</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-primary"><span class="material-symbols-outlined">email</span></div>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Email</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">info@cctravelhub.com</p>
+</div>
+</div>
+</div>
+<form class="space-y-6" id="contactForm">
+<div>
+<label class="block text-sm font-medium text-muted-light dark:text-muted-dark" for="name">Name</label>
+<input class="form-input mt-1 block w-full rounded-lg border-primary/30 bg-surface-light dark:bg-surface-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark p-3" id="name" name="name" type="text" required/>
+</div>
+<div>
+<label class="block text-sm font-medium text-muted-light dark:text-muted-dark" for="email">Email</label>
+<input class="form-input mt-1 block w-full rounded-lg border-primary/30 bg-surface-light dark:bg-surface-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark p-3" id="email" name="email" type="email" required/>
+</div>
+<div>
+<label class="block text-sm font-medium text-muted-light dark:text-muted-dark" for="phone">Phone (Optional)</label>
+<input class="form-input mt-1 block w-full rounded-lg border-primary/30 bg-surface-light dark:bg-surface-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark p-3" id="phone" name="phone" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-muted-light dark:text-muted-dark" for="message">Message</label>
+<textarea class="form-textarea mt-1 block w-full rounded-lg border-primary/30 bg-surface-light dark:bg-surface-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark p-3" id="message" name="message" rows="4" required></textarea>
+</div>
+<button class="bg-primary text-background-dark font-bold py-3 px-6 rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" type="submit" id="submitBtn">
+<span id="submitText">Send Message</span>
+<span id="submitLoader" class="hidden">Sending...</span>
+</button>
+<div id="formMessage" class="hidden p-3 rounded-lg text-sm"></div>
+</form>
+</div>
+<div class="h-full min-h-[400px] rounded-xl overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvX1auwpTzoGYBK0dIYZKyyQurmG2B4DSlk7XuZwb7rTHYdGeTHfphUyg4bjmiBUkengHMz_lCezXRyzmuTzLCHLsPLbgNqdyS3I4knV4K-oC4l8He0U_j3oJxPRqEh0rcubBWwp5BDbKZLKbJH67BrxgIDV_Y54a8kAA0Xaqc-Ib8ElOTdUdjaXuGXGC5Z5R0LpoGLezta29WGju8XK7SErCKPib36EytrrW999F_5tdMSN9N7ERmHecrEF6-0gTHPvdSLIU16W4");'></div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer class="bg-surface-light dark:bg-surface-dark text-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-center items-center gap-4 mb-6">
+<div class="text-primary"><span class="material-symbols-outlined text-4xl">explore</span></div>
+<h2 class="text-2xl font-display font-bold text-text-light dark:text-text-dark">C &amp; C Travel Hub</h2>
+</div>
+<div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-6">
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="code.html">Home</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#destinations">Destinations</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex justify-center gap-6 mb-6">
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg></a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.359 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg></a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.212 3.791 4.649-.69.188-1.42.225-2.16.084.609 1.882 2.373 3.256 4.478 3.295-1.645 1.28-3.714 2.037-5.96 2.037-.386 0-.766-.023-1.141-.066 2.135 1.369 4.671 2.173 7.42 2.173 8.908 0 13.788-7.386 13.788-13.788 0-.21 0-.419-.015-.626.946-.684 1.768-1.536 2.417-2.51z"></path></svg></a>
+</div>
+<p class="text-sm text-muted-light dark:text-muted-dark">© 2024 C &amp; C Travel Hub. All rights reserved.</p>
+</div>
+</footer>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/971585242945?text=Hello%20C%20%26%20C%20Travel%20Hub%2C%20I%27m%20interested%20in%20your%20travel%20services." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 group">
+<svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.51 3.488"/>
+</svg>
+<div class="absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+Chat with us on WhatsApp
+</div>
+</a>
+</div>
+
+<script>
+// Contact Form Functionality
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const submitBtn = document.getElementById('submitBtn');
+    const submitText = document.getElementById('submitText');
+    const submitLoader = document.getElementById('submitLoader');
+    const formMessage = document.getElementById('formMessage');
+
+    // Get form data
+    const formData = new FormData(this);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone') || 'Not provided',
+        message: formData.get('message')
+    };
+
+    // Show loading state
+    submitBtn.disabled = true;
+    submitText.classList.add('hidden');
+    submitLoader.classList.remove('hidden');
+    formMessage.classList.add('hidden');
+
+    try {
+        // Send email using a serverless function or email service
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            // Success
+            formMessage.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+            formMessage.className = 'p-3 rounded-lg text-sm bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
+            formMessage.classList.remove('hidden');
+            this.reset();
+        } else {
+            throw new Error('Failed to send message');
+        }
+    } catch (error) {
+        // Error - For now, show success message since we don't have backend setup
+        // In production, you would handle the actual error
+        formMessage.textContent = 'Thank you for your interest! Please contact us directly via WhatsApp or phone for immediate assistance.';
+        formMessage.className = 'p-3 rounded-lg text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
+        formMessage.classList.remove('hidden');
+        this.reset();
+    } finally {
+        // Reset button state
+        submitBtn.disabled = false;
+        submitText.classList.remove('hidden');
+        submitLoader.classList.add('hidden');
+    }
+});
+
+// Add some basic form validation styling
+document.querySelectorAll('input, textarea').forEach(field => {
+    field.addEventListener('blur', function() {
+        if (this.hasAttribute('required') && !this.value.trim()) {
+            this.classList.add('border-red-500');
+        } else {
+            this.classList.remove('border-red-500');
+        }
+    });
+
+    field.addEventListener('input', function() {
+        this.classList.remove('border-red-500');
+    });
+});
+</script>
+
+</body></html>

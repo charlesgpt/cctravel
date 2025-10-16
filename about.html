@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - C &amp; C Travel Hub</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2ad0d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#101010",
+            "surface-light": "#ffffff",
+            "surface-dark": "#1a1a1a",
+            "muted-light": "#6b7280",
+            "muted-dark": "#9ca3af",
+            "text-light": "#1f2937",
+            "text-dark": "#f3f4f6"
+          },
+          fontFamily: {
+            "display": ["Noto Serif", "serif"],
+            "body": ["Poppins", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+             'gold-glow': '0 0 15px 5px rgba(242, 173, 13, 0.4)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .font-display { font-family: 'Noto Serif', serif; }
+    .font-body { font-family: 'Poppins', sans-serif; }
+    .glowing-compass {
+      animation: spin 8s linear infinite, glow 3s ease-in-out infinite alternate;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes glow {
+      from { filter: drop-shadow(0 0 5px rgba(242, 173, 13, 0.5)); }
+      to { filter: drop-shadow(0 0 20px rgba(242, 173, 13, 0.8)); }
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark">
+<div class="relative min-h-screen w-full overflow-x-hidden">
+<header class="sticky top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap px-6 sm:px-10 py-4 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm border-b border-primary/20">
+<div class="flex items-center gap-3">
+<div class="text-primary glowing-compass rounded-full p-1">
+<span class="material-symbols-outlined text-3xl">explore</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-xl font-display font-bold">C &amp; C Travel Hub</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-primary transition-colors" href="code.html">Home</a>
+<a class="text-primary text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-primary transition-colors" href="#destinations">Destinations</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-text-light dark:text-text-dark hover:text-primary transition-colors">
+<span class="material-symbols-outlined">language</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjkgBpG8vV2RP0bLfShjqBNl0ZGDzO1TJRTBa6_bwobyarBMxxoQOJPSkXjkTDdyTFkLAiAW07ZEB9ooP8uW9YkyqIgO-BJbNCOP3Uu_bBt1Nmc-quBAT1o-R6IoZuG5tlHzD_tHnRR5TsOx07ZPcP7eIgAQl5N_KZm6jgD_G0MEBwYmEVo4G-BtuwrZsTNXnZjgtBv_Ui0AiWXu3EbnV015quj0WwtaTvZwVEHwNKriRW3hiyDIHPgaBn7wKua5_kTvkuHCNmt4c");'></div>
+<button class="lg:hidden text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+
+<main class="flex flex-col">
+<!-- Hero Section -->
+<section class="relative py-24 bg-gradient-to-br from-primary/10 to-primary/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="font-display text-5xl md:text-6xl font-bold text-text-light dark:text-text-dark mb-6">About C &amp; C Travel Hub</h1>
+<p class="text-xl text-muted-light dark:text-muted-dark max-w-3xl mx-auto">Crafting extraordinary journeys and creating unforgettable memories for discerning travelers worldwide.</p>
+</div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-16 sm:py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-6">Our Story</h2>
+<p class="text-muted-light dark:text-muted-dark mb-6 leading-relaxed">
+Founded with a passion for exploration and a commitment to excellence, C &amp; C Travel Hub has been transforming the way people experience the world. Our journey began with a simple belief: that travel should be more than just a destination—it should be a transformative experience that enriches your life and creates lasting memories.
+</p>
+<p class="text-muted-light dark:text-muted-dark mb-6 leading-relaxed">
+With years of experience in the luxury travel industry, we have built a reputation for delivering exceptional service and creating bespoke itineraries that cater to the unique preferences and interests of our clients. From exotic getaways to cultural immersions, we handle every detail with precision and care.
+</p>
+<div class="flex items-center gap-4">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark">Trusted by Thousands</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Over 5,000 satisfied travelers worldwide</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="h-48 bg-cover bg-center rounded-xl" style='background-image: url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80");'></div>
+<div class="h-32 bg-cover bg-center rounded-xl" style='background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80");'></div>
+</div>
+<div class="space-y-4">
+<div class="h-32 bg-cover bg-center rounded-xl" style='background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80");'></div>
+<div class="h-48 bg-cover bg-center rounded-xl" style='background-image: url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80");'></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="py-16 sm:py-24 bg-surface-light dark:bg-surface-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-4">Our Mission &amp; Vision</h2>
+<p class="text-muted-light dark:text-muted-dark max-w-2xl mx-auto">Driven by passion, guided by excellence, and committed to creating extraordinary travel experiences.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="text-center p-8 bg-background-light dark:bg-background-dark rounded-xl border border-primary/20">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-6xl">flag</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-text-light dark:text-text-dark mb-4">Our Mission</h3>
+<p class="text-muted-light dark:text-muted-dark leading-relaxed">
+To provide exceptional, personalized travel experiences that exceed expectations and create lasting memories. We are committed to delivering seamless, luxury travel services that transform the way our clients explore the world.
+</p>
+</div>
+<div class="text-center p-8 bg-background-light dark:bg-background-dark rounded-xl border border-primary/20">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-6xl">visibility</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-text-light dark:text-text-dark mb-4">Our Vision</h3>
+<p class="text-muted-light dark:text-muted-dark leading-relaxed">
+To be the world's most trusted luxury travel partner, known for our innovative approach, exceptional service, and ability to turn travel dreams into reality. We envision a world where every journey is extraordinary.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Our Values Section -->
+<section class="py-16 sm:py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-4">Our Core Values</h2>
+<p class="text-muted-light dark:text-muted-dark max-w-2xl mx-auto">The principles that guide everything we do and shape every experience we create.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center p-6">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-5xl">diamond</span>
+</div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark mb-3">Excellence</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">We strive for perfection in every detail, ensuring that each journey exceeds expectations and creates unforgettable memories.</p>
+</div>
+<div class="text-center p-6">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-5xl">handshake</span>
+</div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark mb-3">Trust</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Building lasting relationships through transparency, reliability, and unwavering commitment to our clients' satisfaction.</p>
+</div>
+<div class="text-center p-6">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-5xl">psychology</span>
+</div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark mb-3">Innovation</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Continuously evolving our services and embracing new technologies to enhance the travel experience.</p>
+</div>
+<div class="text-center p-6">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-5xl">favorite</span>
+</div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark mb-3">Passion</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Our love for travel and exploration drives us to create extraordinary experiences that inspire and delight.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Team Section -->
+<section class="py-16 sm:py-24 bg-surface-light dark:bg-surface-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-4">Meet Our Team</h2>
+<p class="text-muted-light dark:text-muted-dark max-w-2xl mx-auto">Passionate travel experts dedicated to making your journey extraordinary.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/20">
+<div class="size-24 rounded-full bg-cover bg-center mx-auto mb-6 border-4 border-primary" style='background-image: url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80");'></div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark mb-2">Christopher Johnson</h3>
+<p class="text-primary font-medium mb-3">Founder &amp; CEO</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">With over 15 years in luxury travel, Christopher founded C&C Travel Hub to revolutionize personalized travel experiences.</p>
+</div>
+<div class="text-center bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/20">
+<div class="size-24 rounded-full bg-cover bg-center mx-auto mb-6 border-4 border-primary" style='background-image: url("https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80");'></div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark mb-2">Catherine Williams</h3>
+<p class="text-primary font-medium mb-3">Co-Founder &amp; COO</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Catherine brings expertise in operations and customer experience, ensuring every journey is flawlessly executed.</p>
+</div>
+<div class="text-center bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/20">
+<div class="size-24 rounded-full bg-cover bg-center mx-auto mb-6 border-4 border-primary" style='background-image: url("https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80");'></div>
+<h3 class="font-display text-xl font-bold text-text-light dark:text-text-dark mb-2">Michael Chen</h3>
+<p class="text-primary font-medium mb-3">Head of Destinations</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Michael's extensive global network and destination expertise help craft unique itineraries for every traveler.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-16 sm:py-24 bg-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-4">Our Impact</h2>
+<p class="text-muted-light dark:text-muted-dark max-w-2xl mx-auto">Numbers that reflect our commitment to excellence and client satisfaction.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-5xl font-bold text-primary mb-2">5,000+</div>
+<p class="text-text-light dark:text-text-dark font-medium">Happy Travelers</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Satisfied clients worldwide</p>
+</div>
+<div class="text-center">
+<div class="text-5xl font-bold text-primary mb-2">150+</div>
+<p class="text-text-light dark:text-text-dark font-medium">Destinations</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Countries and regions covered</p>
+</div>
+<div class="text-center">
+<div class="text-5xl font-bold text-primary mb-2">98%</div>
+<p class="text-text-light dark:text-text-dark font-medium">Satisfaction Rate</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Client satisfaction score</p>
+</div>
+<div class="text-center">
+<div class="text-5xl font-bold text-primary mb-2">24/7</div>
+<p class="text-text-light dark:text-text-dark font-medium">Support</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Round-the-clock assistance</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 sm:py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="font-display text-4xl font-bold text-text-light dark:text-text-dark mb-6">Ready to Start Your Journey?</h2>
+<p class="text-xl text-muted-light dark:text-muted-dark mb-8">Let us create an extraordinary travel experience tailored just for you.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="contact.html" class="bg-primary text-background-dark font-bold text-lg py-3 px-8 rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 shadow-gold-glow">
+Get Started Today
+</a>
+<a href="code.html#destinations" class="bg-primary/20 text-primary font-bold text-lg py-3 px-8 rounded-lg hover:bg-primary/30 transition-colors">
+Explore Destinations
+</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-surface-light dark:bg-surface-dark text-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-center items-center gap-4 mb-6">
+<div class="text-primary"><span class="material-symbols-outlined text-4xl">explore</span></div>
+<h2 class="text-2xl font-display font-bold text-text-light dark:text-text-dark">C &amp; C Travel Hub</h2>
+</div>
+<div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-6">
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="code.html">Home</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#destinations">Destinations</a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex justify-center gap-6 mb-6">
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.212 3.791 4.649-.69.188-1.42.225-2.16.084.609 1.882 2.373 3.256 4.478 3.295-1.645 1.28-3.714 2.037-5.96 2.037-.386 0-.766-.023-1.141-.066 2.135 1.369 4.671 2.173 7.42 2.173 8.908 0 13.788-7.386 13.788-13.788 0-.21 0-.419-.015-.626.946-.684 1.768-1.536 2.417-2.51z"></path></svg></a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg></a>
+<a class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"></path></svg></a>
+</div>
+<p class="text-sm text-muted-light dark:text-muted-dark">© 2024 C &amp; C Travel Hub. All rights reserved.</p>
+</div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/971585242945?text=Hello%20C%20%26%20C%20Travel%20Hub%2C%20I%27m%20interested%20in%20your%20travel%20services." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 group">
+<svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.51 3.488"/>
+</svg>
+<div class="absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+Chat with us on WhatsApp
+</div>
+</a>
+</div>
+
+</body></html>
